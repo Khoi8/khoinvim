@@ -12,5 +12,5 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("khoinvim.lazy")
+require("lazy").setup({{import = "khoinvim.lazy"}, {import = "khoinvim.lazy.lsp"}})
 
